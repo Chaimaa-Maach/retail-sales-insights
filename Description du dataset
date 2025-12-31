@@ -1,0 +1,41 @@
+
+# Jeu de données : Dirty Retail Store Sales
+
+Le dataset **Dirty Retail Store Sales** contient **12 575 transactions simulées** d’un magasin de détail. Il est conçu pour reproduire des données réelles, avec des valeurs manquantes ou incohérentes, ce qui le rend idéal pour pratiquer le **nettoyage des données, l’analyse exploratoire (EDA) et la création de nouvelles variables (feature engineering)**.
+
+## Informations sur le fichier
+- **Nom du fichier :** `retail_store_sales.csv`  
+- **Nombre de lignes :** 12 575  
+- **Nombre de colonnes :** 11  
+
+## Description des colonnes
+
+| Nom de colonne       | Description                                                              | Exemples                  |
+|---------------------|--------------------------------------------------------------------------|---------------------------|
+| Transaction ID       | Identifiant unique de chaque transaction                                  | TXN_1234567               |
+| Customer ID          | Identifiant unique du client                                              | CUST_01                   |
+| Category             | Catégorie du produit acheté                                               | Food, Furniture           |
+| Item                 | Nom du produit acheté. Peut contenir des valeurs manquantes              | Item_1_FOOD, None         |
+| Price Per Unit       | Prix d’une unité du produit. Peut être manquant                           | 4.00, None                |
+| Quantity             | Quantité achetée. Peut être manquant                                      | 1, None                   |
+| Total Spent          | Total dépensé = Quantity × Price Per Unit                                  | 8.00, None                |
+| Payment Method       | Mode de paiement. Peut être manquant ou invalide                           | Cash, Credit Card         |
+| Location             | Lieu de la transaction (magasin ou en ligne). Peut être manquant           | In-store, Online          |
+| Transaction Date     | Date de la transaction. Toujours valide                                   | 2023-01-15                |
+| Discount Applied     | Indique si une remise a été appliquée. Peut être manquant                  | True, False, None         |
+
+## Catégories et exemples de produits
+
+| Catégorie                     | Exemples d’articles (prix fixe)                        |
+|--------------------------------|--------------------------------------------------------|
+| Electric Household Essentials   | Blender (5 $), Microwave (6,5 $), Toaster (8 $)       |
+| Furniture                       | Office Chair (5 $), Sofa (6,5 $), Coffee Table (8 $) |
+| Computers & Electric Accessories| Laptop (500 $), Mouse (20 $), Keyboard (25 $)        |
+| Food                            | Bread (2 $), Pasta (1,5 $), Rice (3 $)               |
+| Beverages                       | Water (1 $), Juice (2 $), Soda (1,5 $)               |
+| Milk Products                   | Milk (1 $), Cheese (3 $), Yogurt (2 $)               |
+| Patisserie                      | Croissant (1,5 $), Cake (4 $), Muffin (2,5 $)        |
+| Butchers                        | Chicken (5 $), Beef (8 $), Pork (7 $)                |
+
+> Remarque : Chaque catégorie contient 25 produits. Certaines valeurs sont volontairement manquantes ou incohérentes pour simuler des données réelles "sales".
+
